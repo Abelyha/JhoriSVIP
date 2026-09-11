@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHORI'S BARBERSHOP</title>
+    <style>
+        /* Estilos en tema oscuro */
+        body {
+            background-color: #121212;
+            color: #f1f1f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d4af37; /* Color dorado */
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .eslogan {
+            color: #aaa;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #d4af37;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+
+        /* Galería de cortes principales */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .tarjeta-corte {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            width: 250px;
+        }
+
+        .tarjeta-corte img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .tarjeta-corte h3 {
+            margin: 15px 0 5px 0;
+            color: #fff;
+        }
+
+        .tarjeta-corte p {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        /* Lista de precios secundaria */
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        li {
+            background-color: #1e1e1e;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            border-left: 3px solid #d4af37;
+        }
+
+        /* Botones de contacto */
+        .boton {
+            display: inline-block;
+            background-color: #25d366; /* Verde WhatsApp */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .boton-maps {
+            background-color: #ea4335; /* Rojo Google Maps */
+        }
+
+        .contacto-info {
+            background-color: #1e1e1e;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JHORI'S BARBERSHOP</h1>
+        <p class="eslogan">Los mejores cortes de cabello gaaa</p>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: Muestra visual de cortes -->
+    <main>
+        <section>
+            <h2>Nuestros Cortes Destacados</h2>
+            <div class="galeria">
+                
+                <div class="tarjeta-corte">
+                    <!-- Reemplaza la URL de la imagen por la foto real de tu corte -->
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=500" alt="Corte Clásico">
+                    <h3>Corte Clásico</h3>
+                    <p>S/ 20</p>
+                </div>
+
+                <div class="tarjeta-corte">
+                    <!-- Reemplaza la URL de la imagen por la foto real de tu corte -->
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500" alt="Corte Degradado">
+                    <h3>Degradado / Fade</h3>
+                    <p>S/ 50</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Lista de servicios complementarios -->
+        <section>
+            <h2>Lista de Precios</h2>
+            <ul>
+                <span>Clásico</span> <strong>S/ 20</strong></li>
+                <span>Degradado</span> <strong>S/ 50</strong></li>
+            </ul>
+        </section>
+
+        <!-- Horario y Contacto -->
+        <section class="contacto-info">
+            <h2>Horario de Atención</h2>
+            <p>Lunes a Sábado: 9:00 AM - 9:00 PM</p>
+
+            <h2>Ubicación y Citas</h2>
+            <p><strong>Dirección:</strong> Calle 100 Mz.A22 - Lt.1</p>
+            <p><strong>Teléfono:</strong> 994 936 115</p>
+
+            <div style="margin-top: 15px;">
+                <!-- WhatsApp corregido sin el signo + para asegurar compatibilidad -->
+                <a class="boton" href="https://wa.me/51994936115" target="_blank">Escribir al WhatsApp</a>
+                
+                <a class="boton boton-maps" href="https://www.google.com/maps/place/BARBERIA+JHORI+VIP/@-16.3608368,-72.1918983,21z/data=!4m15!1m8!3m7!1s0x91419a5838e4a0df:0xf1e92f90ed6a1f5c!2sAvenida+Shutton,+Majes+04112!3b1!8m2!3d-16.3591833!4d-72.1907879!16s%2Fg%2F1tfzsz_5!3m5!1s0x91419b0033b6dac9:0x90b60f27464901de!8m2!3d-16.3607509!4d-72.1918369!16s%2Fg%2F11z3xd6phw" target="_blank">Ver en Google Maps</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
